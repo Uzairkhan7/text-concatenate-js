@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>OnOffBulb</title>
+</head>
+
+<body>
+    <img src="OFFbulb.jpg" alt="" id="image" onclick="onOff()" style="display: block; margin: auto" />
+</body>
+<script>
+    function onOff() {
+        var image = document.getElementById('image')
+        if (image.src.match('ONbulb')) { image.src = " OFFbulb.jpg" } else { image.src = "ONbulb.jpg" }
+    } </script>
+
+</html>
